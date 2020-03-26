@@ -5,7 +5,7 @@ This is a RE-RELEASE. The origional repository may be compromised and will be di
 **THIS REPOSITORY IS MEANT FOR DEMONSTRATION PURPOSES, PLEASE USE RESPONSIBLY. MORE TO COME !!!! :)**
 #
 # Main Page (YOUR END):
-![](https://github.com/J-Horensma/The-Garden-Of-Eden/blob/master/Images/Eden.png)
+![](https://github.com/J-Horensma/The-Garden-Of-Eden/blob/master/Images/Eden_1.png)
 # After A Successful Capture:
 ![](https://github.com/J-Horensma/The-Garden-Of-Eden/blob/master/Images/Eden_2.png)
 # Phishing Pages (CLIENT END):
