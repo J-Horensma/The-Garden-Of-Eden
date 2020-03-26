@@ -6,6 +6,6 @@ ftruncate($fp, 0);
 //close file
 fclose($fp);
 sleep(1);
-header('Location: http://127.0.0.1/Sec_Ops/SERVER/Dashboard.html');
+header('Location: http://127.0.0.1/The-Garden-Of-Eden/Dashboard.html');
 ?>
 
