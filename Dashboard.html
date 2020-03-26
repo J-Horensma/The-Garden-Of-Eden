@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!THE GARDEN OF EDEN>
+<!BY JOEL HORENSMA>
+<head>
+<!AUTO REFRESH PAGE IN SECONDS content="1" = (1 SECOND)>
+<meta http-equiv="refresh" content="2"/>
+<!PREVENT CACHEING>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<!VIEWPORT SIZING>
+<meta charset="UTF-8" content="initial-scale=1" maximum-scale="1" minimum-scale="1" user-scalable="no" width="device-width" height="device-height" name="viewport">
+<link rel="shortcut icon" href="Eden.jpg">
+<!BEGIN CSS STYLING>
+<style>
+.container {
+position: relative;
+text-align: center;
+color: white;
+}
+.data {
+opacity: 0.7;
+border-radius:20px;
+padding:5px;
+box-sizing: content-box;
+width: 80%;
+height: 70%;
+border: 15px solid lime;
+border-style:groove;
+overflow:hidden;
+position: absolute;
+top: 110px;
+right: 8.5%;
+}
+.centered {
+border-radius:20px;
+padding:5px;
+box-sizing: content-box;
+width: 90%;
+height: 80%;
+border: 5px solid lime;
+border-style:dashed;
+overflow:hidden;
+position: absolute;
+top: 41%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.countdown {
+color:lime;
+padding-top:5px;
+padding-bottom:20px;
+margin-left:33px;
+position: fixed;
+top: 20px;
+left: 48%;
+transform: translate(-50%, -50%);
+}
+.by {
+opacity: 1;
+color:lime;
+padding-top:10px;
+margin-left:33px;
+position: fixed;
+top: 80px;
+left: 48%;
+transform: translate(-50%, -50%);
+}
+.title {
+opacity: 1;
+color:lime;
+padding-top:1px;
+margin-left:33px;
+position: fixed;
+top: 20px;
+left: 48%;
+transform: translate(-50%, -50%);
+}
+.title2 {
+opacity: 1;
+color:white;
+padding-top:30px;
+margin-left:33px;
+position: fixed;
+top: 30px;
+left: 48%;
+transform: translate(-50%, -50%);
+}
+.title3 {
+opacity: 1;
+color:lime;
+padding-top:10px;
+margin-left:33px;
+position: fixed;
+top: 60px;
+left: 48%;
+transform: translate(-50%, -50%);
+}
+h2 { font-family:"Black Ops One"; 
+font-size: 23px; 
+font-style: normal; 
+font-variant: normal; 
+font-weight: 700; 
+line-height: 26.4px; 
+}
+h3 { font-family: "Black Ops One"; 
+font-size: 15px; 
+font-style: normal; 
+font-variant: normal; 
+font-weight: 700; 
+line-height: 15.4px; 
+}
+</style>
+<!END CSS STYLING>
+<!JQUERY API CALL>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<!TITLE>
+<title>Garden Of Eden</title>
+<!---JS RELOAD COUNTER--->
+<div style="font-size:20px; font-weight:bold;" id='seconds-counter' class=countdown></div>
+</head>
+<body onload="refreshPage();" style="background-color:black; background-image: url('data.gif'); background-size:100%;">
+<!TOP TITLE OF PAGE>
+<h2 class=title style="text-align:center;color:white" >WELCOME TO</h2>
+<h2 class=title2 style="text-align:center; color:white" >THE GARDEN OF EDEN</h2>
+<h3 class=by style="text-align:center; color:lime" >BY: JOEL HORENSMA</h3>
+<h2 class=title3 style="text-align:center; color:white" >--------------------------------------------------------------------------------------------------------------</h2>
+<!Terminal>
+<div class="data" style=background-color:green;>
+<a value="Refresh Page" href="" onClick="window.location.href=window.location.href" type=button style="border-style:outset; border-radius:5px; color:lime; float-left; font-family: Black Ops One;">REFRESH</a><a type=button style="border-style:outset; border-radius:5px; background-color: green; color:lime; font-family: Black Ops One;" href="#" onClick="DataDetails()" name=button id="Details">DETAILS</a><a type=button style="border-style:outset; border-radius:5px; background-color: green; color:lime; float:right; font-family: Black Ops One;" href="#" onClick="data()" name=button id="Wipe">WIPE</a>
+<h3 style="color:lime; text-align:center; font-family: Black Ops One;" contenteditable="false">Data<embed style=margin-top:40px; class=centered src="php/data.php"></h3>
+</div>
+</div>
+<!BEGIN SCRIPTS>
+<script type="text/javascript">
+var btn = document.getElementById('Wipe');
+function data() { 
+alert("WIPE DATA IN CONSOLE?");
+document.location.href = "php/WipeData.php";
+};
+var btn = document.getElementById('Details');
+function DataDetails() { 
+alert("DETAILS");
+};
+</script>
+<!END SCRIPTS>
+</body>
+</html> 
+
+
